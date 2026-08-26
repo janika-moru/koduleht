@@ -8,6 +8,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="blogi.css">
 </head>
 <body>
 <nav>
@@ -21,22 +22,47 @@
   </ul>
 </nav>
 
-<section class="work" style="padding-top:9rem; min-height:72vh;">
-  <div class="work-head">
+<main class="blog-index">
+  <header class="blog-header">
     <div class="label">Blogi</div>
-    <h2 class="section-title">Mõtted AI-st,<br><em>tööprotsessidest ja süsteemidest</em></h2>
-    <p>Siia hakkavad tulema praktilised lood sellest, kuidas AI-d, automatiseerimist ja Google’i tööriistu igapäevatöös kasutada nii, et süsteem jääks arusaadavaks ja hallatavaks.</p>
-  </div>
-  <div class="work-list">
-    <div class="work-item">
-      <div class="work-meta">Esimene postitus</div>
-      <div class="work-body">
-        <h3>Blogi on valmimas</h3>
-        <p>Esimese päris postituse lisame siia järgmise sammuna. Edaspidi saab iga uus postitus oma HTML-faili ning see leht toimib blogi sisukorrana.</p>
+    <h1>Mõtted päris tööst.</h1>
+    <p>AI, tööprotsessid, automaatika ja Google Workspace. Kirjutan sellest, mis töötab, mis ei tööta ja kuidas teha süsteeme, millest inimene ise aru saab.</p>
+  </header>
+
+  <section class="blog-list" aria-label="Blogipostitused">
+    <article class="blog-entry">
+      <a class="blog-entry-visual blog-visual-one" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
+      <div class="blog-entry-copy">
+        <div class="blog-meta"><span>Näidis</span><span>AI</span><span>5 min</span></div>
+        <h2><a href="blogi/postituse-mall.html">Miks AI-st ei ole kasu, kui tööprotsess ise on segane</a></h2>
+        <p>Hea AI-vastus ei paranda automaatselt katkist tööviisi. Enne tööriista valimist tasub aru saada, mis päriselt liikuma peab ja kus inimene peab otsuse juures alles jääma.</p>
+        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
       </div>
-    </div>
-  </div>
-</section>
+    </article>
+
+    <article class="blog-entry reverse">
+      <a class="blog-entry-visual blog-visual-two" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
+      <div class="blog-entry-copy">
+        <div class="blog-meta"><span>Näidis</span><span>Tööprotsessid</span><span>4 min</span></div>
+        <h2><a href="blogi/postituse-mall.html">Millal kasutada AI-d ja millal automatiseerida?</a></h2>
+        <p>Kui tulemus peab olema iga kord täpne, on vaja teistsugust lahendust kui siis, kui inimene saab tulemuse enne kasutamist üle vaadata.</p>
+        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
+      </div>
+    </article>
+
+    <article class="blog-entry">
+      <a class="blog-entry-visual blog-visual-three" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
+      <div class="blog-entry-copy">
+        <div class="blog-meta"><span>Näidis</span><span>Google Workspace</span><span>6 min</span></div>
+        <h2><a href="blogi/postituse-mall.html">Väikeettevõtte töölaud ei pea olema keeruline</a></h2>
+        <p>Gmail, Drive ja kalender võivad olla täiesti piisav töövahendite komplekt, kui info liigub loogiliselt ja süsteem ei sõltu ühest inimesest või AI-tööriistast.</p>
+        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
+      </div>
+    </article>
+  </section>
+
+  <p class="blog-note">Praegu on siin kujunduse näidissisu. Päris postitused asendavad need ükshaaval.</p>
+</main>
 
 <footer>
   <div class="footer-logo">Janika Mõru</div>
