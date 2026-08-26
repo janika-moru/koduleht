@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Kontakt — Janika Mõru</title>
-  <meta name="description" content="Võta Janika Mõruga ühendust koolituse, mentorluse, konsultatsiooni või Google Workspace’i abi teemal." />
+  <meta name="description" content="Võta Janika Mõruga ühendust e-posti teel või broneeri tasuta tutvumiskõne." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
@@ -21,23 +21,34 @@
   </ul>
 </nav>
 
-<section class="cta" style="padding-top:9rem; min-height:78vh;">
+<section class="cta" style="padding-top:9rem;">
   <div class="label">Kontakt</div>
-  <h2 class="section-title">Kirjuta või vali aeg,<br><em>kui tahad koostööd arutada</em></h2>
-  <div class="cta-grid">
+  <h2 class="section-title">Vali, kuidas tahad<br><em>ühendust võtta</em></h2>
+
+  <div class="cta-grid" style="margin-bottom:3rem;">
     <div class="cta-card primary">
-      <div class="cta-tag">Koolituse päring</div>
-      <h3>Otsid oma programmi koolitajat?</h3>
-      <p>Kirjuta mulle lühidalt, millisele grupile koolitust otsid, mis teema sind huvitab ja millal koolitus võiks toimuda.</p>
-      <a href="mailto:janika@assisto.ee?subject=Koolituse%20päring" class="btn-cta">janika@assisto.ee →</a>
+      <div class="cta-tag">E-mail</div>
+      <h3>Saada mulle kiri</h3>
+      <p>Kui tead juba, millest tahad rääkida, kirjuta mulle otse. Võid lühidalt kirjeldada oma küsimust, ideed või seda, millist koostööd otsid.</p>
+      <a href="mailto:janika@assisto.ee" class="btn-cta">janika@assisto.ee →</a>
     </div>
+
     <div class="cta-card">
-      <div class="cta-tag">Mentorlus või konsultatsioon</div>
+      <div class="cta-tag">Tasuta tutvumiskõne</div>
       <h3>Räägime kõigepealt läbi</h3>
-      <p>Kui tahad enne sobivust arutada, vali kalendrist lühike tutvumiskõne.</p>
-      <a href="https://koalendar.com/e/tasuta-konsultatsioon" class="btn-cta">Vali sobiv aeg →</a>
+      <p>Kui tahad enne aru saada, kas ja kuidas saan aidata, vali kalendrist sobiv aeg tasuta tutvumiskõneks.</p>
     </div>
   </div>
+
+  <div class="label">Broneeri aeg</div>
+  <h2 class="section-title" style="margin-bottom:2rem;">Vali kalendrist<br><em>sobiv aeg</em></h2>
+
+  <!-- Koalendar Inline Embed Start -->
+  <div id="inline-widget-tasuta-konsultatsioon"></div>
+  <script>window.Koalendar=window.Koalendar||function(){(Koalendar.props=Koalendar.props||[]).push(arguments)};</script>
+  <script async src="https://koalendar.com/assets/widget.js"></script>
+  <script>Koalendar('inline', {"url":"https://koalendar.com/e/tasuta-konsultatsioon","selector":"#inline-widget-tasuta-konsultatsioon"});</script>
+  <!-- Koalendar Inline Embed End -->
 </section>
 
 <footer>
