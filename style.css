@@ -38,31 +38,6 @@ body { background: var(--bg); color: var(--ink); font-family: var(--font-body); 
   width: 100%;
   max-width: var(--page-max);
   margin-inline: auto;
-  position: relative;
-  isolation: isolate;
-}
-.hero::before,
-.problem::before,
-.services-hero::before,
-.services::before,
-.mega::before,
-.work::before,
-.talks::before,
-.how::before,
-.not-wrap::before,
-.about::before,
-.cta::before,
-.blog-index::before,
-.training-page::before,
-.article-page::before {
-  content: '';
-  position: absolute;
-  inset-block: 0;
-  left: 50%;
-  width: 100vw;
-  transform: translateX(-50%);
-  background: inherit;
-  z-index: -1;
 }
 nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding-block: 1.2rem; padding-inline: max(3.5rem, calc(50vw - var(--page-half) + 5rem)); background: rgba(247,246,242,0.96); backdrop-filter: blur(12px); border-bottom: 1px solid var(--border); }
 .nav-logo { font-family: var(--font-head); font-style: italic; font-weight: 400; font-size: 1.25rem; color: var(--ink); text-decoration: none; }
