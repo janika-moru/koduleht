@@ -22,17 +22,62 @@
   </ul>
 </nav>
 
-<section class="services" style="padding-top:9rem;">
-  <div class="services-top">
+<main>
+<section class="services-hero" aria-labelledby="services-title">
+  <div class="services-hero-head">
     <div>
       <div class="label">Teenused</div>
-      <h2 class="section-title">Õpi oskus, lahenda mure või<br><em>tee tööviis paremaks</em></h2>
+      <h1 id="services-title">Teenused</h1>
+    </div>
+    <p>Vali teenus selle järgi, kas vajad oma grupile koolitust, pikemat üks ühele koostööd, lahendust ühele küsimusele või praktilist teostust Google Workspace’is.</p>
+  </div>
+
+  <div class="service-menu" aria-label="Vali teenus">
+    <a class="service-menu-card" href="#koolitused">
+      <span class="service-menu-number">01</span>
+      <span class="service-menu-title">Koolitused</span>
+      <strong>Praktilised AI-koolitused programmidele ja gruppidele</strong>
+      <span class="service-menu-description">Õpime osalejate päris tööülesannete peal, et nad oskaksid pärast iseseisvalt jätkata.</span>
+      <span class="service-menu-link">Vaata lähemalt <span aria-hidden="true">↓</span></span>
+    </a>
+
+    <a class="service-menu-card" href="#mentorlus">
+      <span class="service-menu-number">02</span>
+      <span class="service-menu-title">Mentorlus</span>
+      <strong>Pikem üks ühele koostöö</strong>
+      <span class="service-menu-description">Arendame sinu AI-töövõtteid ja süsteeme päris töö käigus, sammhaaval.</span>
+      <span class="service-menu-link">Vaata lähemalt <span aria-hidden="true">↓</span></span>
+    </a>
+
+    <a class="service-menu-card" href="#konsultatsioon">
+      <span class="service-menu-number">03</span>
+      <span class="service-menu-title">Konsultatsioon</span>
+      <strong>Üks konkreetne küsimus</strong>
+      <span class="service-menu-description">Vaatame probleemi koos läbi ja viime selle selge järgmise sammuni.</span>
+      <span class="service-menu-link">Vaata lähemalt <span aria-hidden="true">↓</span></span>
+    </a>
+
+    <a class="service-menu-card" href="#projektitoo">
+      <span class="service-menu-number">04</span>
+      <span class="service-menu-title">Projektitöö</span>
+      <strong>Google Workspace’i praktiline teostus</strong>
+      <span class="service-menu-description">Migratsioon, konto seadistamine või töökeskkonna korrastamine väikeettevõtjale.</span>
+      <span class="service-menu-link">Vaata lähemalt <span aria-hidden="true">↓</span></span>
+    </a>
+  </div>
+</section>
+
+<section class="services services-detail" aria-labelledby="services-detail-title">
+  <div class="services-top services-detail-head">
+    <div>
+      <div class="label">Teenused lähemalt</div>
+      <h2 class="section-title" id="services-detail-title">Mis iga koostöövormi<br><em>sees on</em></h2>
     </div>
     <p>Koolitus on grupile, mentorlus sügavamaks üks ühele tööks. Konsultatsioon aitab lahendada ühe konkreetse küsimuse ning projektitöö sobib siis, kui vajad Google Workspace’is praktilist teostust.</p>
   </div>
 
   <div class="service-grid">
-    <div class="s-card anchor">
+    <div class="s-card anchor" id="koolitused">
       <div class="anchor-left">
         <span class="s-tag">Programmijuhtidele · Grupikoolitus</span>
         <h3>Praktiline AI-koolitus sinu programmi</h3>
@@ -47,21 +92,21 @@
       </div>
     </div>
 
-    <div class="s-card">
+    <div class="s-card" id="mentorlus">
       <span class="s-tag">Üks ühele · Mitu kuud</span>
       <h3>Mentorlus</h3>
       <p>Sobib sulle, kui AI on juba kasutuses, aga tahad sellest oma töös rohkem kasu saada. Vaatame su päris tööülesandeid, parandame töövõtteid ja ehitame süsteeme töö käigus. Mina aitan märgata ja valida, sina teed ning õpid seda ise edasi arendama.</p>
       <a class="s-link" href="kontakt.html">Räägime</a>
     </div>
 
-    <div class="s-card">
+    <div class="s-card" id="konsultatsioon">
       <span class="s-tag">Ühekordne · 60–90 min</span>
       <h3>Konsultatsioon</h3>
       <p>Kui sul on üks konkreetne asi, mis on ette jäänud: Gmaili filter, Drive’i struktuur, Claude’i seadistus või tööprotsess, mis vajab lahtimõtestamist. Vaatame selle koos üle ja viime nii kaugele, et saad ise edasi minna.</p>
       <a class="s-link" href="kontakt.html">Võta ühendust</a>
     </div>
 
-    <div class="s-card">
+    <div class="s-card" id="projektitoo">
       <span class="s-tag">Google Workspace · Päringul</span>
       <h3>Projektitöö</h3>
       <p>Kui vajad konkreetset teostust Google Workspace’is: migratsiooni, konto turvalisemat seadistamist või töökeskkonna korrastamist ja ülesehitamist. Eelkõige väikeettevõtjale, kellel ei ole oma IT-tuge.</p>
@@ -103,6 +148,7 @@
     <div class="cta-card"><div class="cta-tag">Üks ühele</div><h3>Mentorlus või konsultatsioon</h3><p>Kui küsimus on sinu enda töös, saad kirjutada või valida tutvumiskõne.</p><a href="kontakt.html" class="btn-cta">Võta ühendust →</a></div>
   </div>
 </section>
+</main>
 
 <footer>
   <div class="footer-logo">Janika Mõru</div>
