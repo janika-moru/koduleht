@@ -1,76 +1,26 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Blogi — Janika Mõru</title>
-  <meta name="description" content="Janika Mõru artiklid AI praktilisest kasutusest, tööprotsessidest, automatiseerimisest ja Google Workspace’ist." />
+  <meta name="description" content="Mõtted AI-st päris töövoogudes, Google'i ökosüsteemist, automatiseerimisest, delegeerimisest ja väikeettevõtte töökorraldusest.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="blogi.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="blogi.css">
 </head>
 <body>
-<nav>
-  <a class="nav-logo" href="index.html">Janika Mõru</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Avaleht</a></li>
-    <li><a href="teenused.html">Teenused</a></li>
-    <li><a href="koolituskalender.html">Koolituskalender</a></li>
-    <li><a href="blogi.html">Blogi</a></li>
-    <li><a href="minust.html">Minust</a></li>
-    <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
-  </ul>
-</nav>
+<a class="skip-link" href="#sisu">Liigu sisu juurde</a>
+<nav class="site-nav" aria-label="Põhimenüü"><div class="nav-inner"><a class="nav-logo" href="index.html">Janika Mõru</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menüü</button><ul class="nav-links" id="nav-links"><li><a href="ai-ja-automatsioonid.html">AI ja automatsioonid</a></li><li><a href="google-okosusteem.html">Google ökosüsteem</a></li><li><a href="minust.html">Minust</a></li><li><a href="blogi.html" aria-current="page">Blogi</a></li><li><a class="nav-cta" href="kontakt.html">Broneeri aeg</a></li></ul></div></nav>
 
-<main class="blog-index">
-  <header class="blog-header">
-    <div class="label">Blogi</div>
-    <h1>Mõtted päris tööst.</h1>
-    <p>AI, tööprotsessid, automaatika ja Google Workspace. Kirjutan sellest, mis töötab, mis ei tööta ja kuidas teha süsteeme, millest inimene ise aru saab.</p>
-  </header>
-
+<main id="sisu" class="blog-index">
+  <header class="blog-header"><p class="label">Blogi</p><h1>Mõtted <span class="blue-text">parematest tööviisidest</span></h1><p class="lead">AI päris töövoogudes, automatiseerimise valikud ja piirid, Google'i ökosüsteem, info liikumine ning väikeettevõtja enda tööoskuste kasvatamine.</p></header>
   <section class="blog-list" aria-label="Blogipostitused">
-    <article class="blog-entry">
-      <a class="blog-entry-visual blog-visual-one" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
-      <div class="blog-entry-copy">
-        <div class="blog-meta"><span>Näidis</span><span>AI</span><span>5 min</span></div>
-        <h2><a href="blogi/postituse-mall.html">Miks AI-st ei ole kasu, kui tööprotsess ise on segane</a></h2>
-        <p>Hea AI-vastus ei paranda automaatselt katkist tööviisi. Enne tööriista valimist tasub aru saada, mis päriselt liikuma peab ja kus inimene peab otsuse juures alles jääma.</p>
-        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
-      </div>
-    </article>
-
-    <article class="blog-entry reverse">
-      <a class="blog-entry-visual blog-visual-two" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
-      <div class="blog-entry-copy">
-        <div class="blog-meta"><span>Näidis</span><span>Tööprotsessid</span><span>4 min</span></div>
-        <h2><a href="blogi/postituse-mall.html">Millal kasutada AI-d ja millal automatiseerida?</a></h2>
-        <p>Kui tulemus peab olema iga kord täpne, on vaja teistsugust lahendust kui siis, kui inimene saab tulemuse enne kasutamist üle vaadata.</p>
-        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
-      </div>
-    </article>
-
-    <article class="blog-entry">
-      <a class="blog-entry-visual blog-visual-three" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a>
-      <div class="blog-entry-copy">
-        <div class="blog-meta"><span>Näidis</span><span>Google Workspace</span><span>6 min</span></div>
-        <h2><a href="blogi/postituse-mall.html">Väikeettevõtte töölaud ei pea olema keeruline</a></h2>
-        <p>Gmail, Drive ja kalender võivad olla täiesti piisav töövahendite komplekt, kui info liigub loogiliselt ja süsteem ei sõltu ühest inimesest või AI-tööriistast.</p>
-        <a class="blog-read-more" href="blogi/postituse-mall.html">Loe postitust</a>
-      </div>
-    </article>
+    <article class="blog-entry"><a class="blog-entry-visual photo-one" href="blogi/postituse-mall.html" aria-label="Ava näidispostitus"></a><div class="blog-entry-copy"><div class="blog-meta">AI ja töövood · 5 min</div><h2><a href="blogi/postituse-mall.html">Miks AI-st ei ole kasu, kui tööprotsess ise on segane</a></h2><p>Hea AI-vastus ei paranda automaatselt katkist tööviisi. Enne tööriista valimist tasub aru saada, mis peab päriselt liikuma ja kus inimene peab otsuse juures alles jääma.</p><a class="text-link" href="blogi/postituse-mall.html">Loe postitust</a></div></article>
+    <article class="blog-entry reverse"><div class="blog-entry-visual placeholder-visual"><span>Foto lisada: märkmik, töölaud või ekraanikuva detail</span></div><div class="blog-entry-copy"><div class="blog-meta">Delegeerimine · 4 min</div><h2><a href="blogi/postituse-mall.html">Millal kasutada AI-d ja millal automatiseerida?</a></h2><p>Kui tulemus peab olema iga kord täpne, on vaja teistsugust lahendust kui siis, kui inimene saab tulemuse enne kasutamist üle vaadata.</p><a class="text-link" href="blogi/postituse-mall.html">Loe postitust</a></div></article>
+    <article class="blog-entry"><div class="blog-entry-visual placeholder-visual"><span>Foto lisada: Google'i töövoog päris töökeskkonnas</span></div><div class="blog-entry-copy"><div class="blog-meta">Google ökosüsteem · 6 min</div><h2><a href="blogi/postituse-mall.html">Väikeettevõtte töölaud ei pea olema keeruline</a></h2><p>Gmail, Drive ja kalender võivad olla täiesti piisav töövahendite komplekt, kui info liigub loogiliselt ja süsteem jääb inimesele hallatavaks.</p><a class="text-link" href="blogi/postituse-mall.html">Loe postitust</a></div></article>
   </section>
-
-  <p class="blog-note">Praegu on siin kujunduse näidissisu. Päris postitused asendavad need ükshaaval.</p>
+  <p class="blog-note">Postitused on praegu kujunduse näidissisu ja asenduvad päris lugudega ükshaaval.</p>
 </main>
-
-<footer>
-  <div class="footer-logo">Janika Mõru</div>
-  <p>AI-koolitused · mentorlus · Google Workspace</p>
-  <p><a href="mailto:janika@assisto.ee">janika@assisto.ee</a></p>
-  <p>© 2026 Janika Mõru</p>
-</footer>
-<script src="charla.js"></script>
-</body>
-</html>
+<footer><div><div class="footer-logo">Janika Mõru</div><p>Vähem tööriistu. Parem tööviis.</p><p>© 2026 Janika Mõru</p></div><div class="footer-links"><div class="footer-heading">Koostöö</div><a href="ai-ja-automatsioonid.html">AI ja automatsioonid</a><a href="google-okosusteem.html">Google ökosüsteem</a><a href="kontakt.html">Broneeri aeg</a></div><div class="footer-links"><div class="footer-heading">Kontakt</div><a href="mailto:janika@assisto.ee">janika@assisto.ee</a><a href="minust.html">Minust</a><a href="blogi.html">Blogi</a></div></footer>
+<script src="site.js"></script><script src="charla.js"></script>
+</body></html>

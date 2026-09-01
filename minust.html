@@ -1,69 +1,65 @@
 <!DOCTYPE html>
 <html lang="et">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Minust — Janika Mõru</title>
-  <meta name="description" content="Janika Mõru taust, tööviis ja praktiline lähenemine AI-le, tööprotsessidele ja Google Workspace’ile." />
+  <meta name="description" content="Janika Mõru taust, tööviis ja põhimõtted AI, Google'i tööriistade ning väikeettevõtte töövoogude arendamisel.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<nav>
-  <a class="nav-logo" href="index.html">Janika Mõru</a>
-  <ul class="nav-links">
-    <li><a href="index.html">Avaleht</a></li>
-    <li><a href="teenused.html">Teenused</a></li>
-    <li><a href="koolituskalender.html">Koolituskalender</a></li>
-    <li><a href="blogi.html">Blogi</a></li>
-    <li><a href="minust.html">Minust</a></li>
-    <li><a href="kontakt.html" class="nav-cta">Kontakt</a></li>
-  </ul>
-</nav>
+<a class="skip-link" href="#sisu">Liigu sisu juurde</a>
+<nav class="site-nav" aria-label="Põhimenüü"><div class="nav-inner">
+  <a class="nav-logo" href="index.html">Janika Mõru</a><button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menüü</button>
+  <ul class="nav-links" id="nav-links"><li><a href="ai-ja-automatsioonid.html">AI ja automatsioonid</a></li><li><a href="google-okosusteem.html">Google ökosüsteem</a></li><li><a href="minust.html" aria-current="page">Minust</a></li><li><a href="blogi.html">Blogi</a></li><li><a class="nav-cta" href="kontakt.html">Broneeri aeg</a></li></ul>
+</div></nav>
 
-<section class="about" style="padding-top:9rem;">
-  <div class="label">Minust</div>
-  <h2 class="section-title">Mulle meeldib<br><em>süsteeme ehitada</em></h2>
-  <div class="about-inner">
-    <div class="about-img"><img src="Janika_Mõru_heledal_taustal.jpg" alt="Janika Mõru" /></div>
-    <div class="about-content">
-      <p class="lead">Ma ei alusta ideaalse protsessi joonistamisest. Vaatame, kuidas töö täna päriselt käib, ja teeme seda samm-sammult paremaks.</p>
-      <p>Minu taust ühendab klienditeeninduse, infokorralduse ja ettevõtja igapäevase töö. Olen töötanud aastaid klienditeeninduses ja virtuaalse assistendina, olnud mitmes tiimis ning ka tiimijuhi rollis. Tartu Ülikoolis õppisin infokorraldust: dokumendihaldust, arhiivindust ja süsteemset info korraldamist.</p>
-      <p>Praegu koolitan ja mentordan. Eriti meeldib mulle töötada gruppidega, kus on erineva taustaga alustavad ja väikeettevõtjad. Nad ei vaja loetelu kõigest, mida AI-ga teha saab, vaid arusaadavat kohta, kust oma päris tööga alustada.</p>
-      <p>Google’i ökosüsteem on minu üks tugevamaid praktilisi suundi. Eriti saan aidata väikeettevõtjat, kellel ei ole oma IT-osakonda, kuid kes vajab abi Workspace’i korrastamise, migratsiooni, turvalisuse või igapäevaste töövoogudega.</p>
-      <div class="about-pills">
-        <span class="about-pill">AI vestlusoskus</span>
-        <span class="about-pill">AI praktiline kasutus</span>
-        <span class="about-pill">Google Workspace</span>
-        <span class="about-pill">Infokorraldus (TÜ)</span>
-        <span class="about-pill">Protsessid ja süsteemid</span>
-        <span class="about-pill">Klienditeenindus</span>
+<main id="sisu">
+  <header class="about-hero">
+    <div class="about-intro">
+      <div class="about-photo"><img src="Janika_Mõru_heledal_taustal.jpg" alt="Janika Mõru"></div>
+      <div class="about-copy">
+        <p class="label">Minust</p>
+        <h1>Mulle meeldib näha, kuidas töö <span class="blue-text">päriselt liigub</span></h1>
+        <p class="lead">Ma ei alusta ideaalse protsessi joonistamisest. Vaatame, kuidas töö täna päriselt käib, ja teeme seda samm-sammult paremaks.</p>
+        <p>Minu taust ühendab klienditeeninduse, infokorralduse ja ettevõtja igapäevase töö. Olen töötanud klienditeeninduses ja virtuaalse assistendina, olnud mitmes tiimis ning ka tiimijuhi rollis. Tartu Ülikoolis õppisin infokorraldust: dokumendihaldust, arhiivindust ja süsteemset info korraldamist.</p>
+        <p>Praegu koolitan ja mentordan. Eriti meeldib mulle töötada vabakutseliste, väikeettevõtjate ja gruppidega, kes ei vaja loetelu kõigest, mida tehnoloogiaga teha saab, vaid arusaadavat kohta, kust oma päris tööga alustada.</p>
       </div>
     </div>
-  </div>
-</section>
+  </header>
 
-<div class="mega">
-  <div class="label" style="justify-content:center;">Minu tööpõhimõte</div>
-  <p class="mega-quote">Lahendus peab aitama sul tööd teha,<br>mitte tekitama uut süsteemi,<br><strong>millest sa ise aru ei saa.</strong></p>
-</div>
+  <section class="section blue-soft"><p class="about-quote">Lahendus peab aitama sul tööd teha, mitte tekitama uut süsteemi, millest sa ise aru ei saa.</p></section>
 
-<section class="cta">
-  <div class="label">Koostöö</div>
-  <h2 class="section-title">Kui see lähenemine sobib,<br><em>vaata teenuseid või kirjuta</em></h2>
-  <div class="cta-grid">
-    <div class="cta-card primary"><div class="cta-tag">Teenused</div><h3>Kuidas saan aidata?</h3><p>Koolitused, mentorlus, konsultatsioon ja Google Workspace’i projektitöö.</p><a href="teenused.html" class="btn-cta">Vaata teenuseid →</a></div>
-    <div class="cta-card"><div class="cta-tag">Kontakt</div><h3>Võta ühendust</h3><p>Kui tead juba, mida vajad, kirjuta mulle otse.</p><a href="kontakt.html" class="btn-cta">Kontakt →</a></div>
-  </div>
-</section>
+  <section class="section white">
+    <div class="editorial-split">
+      <div class="editorial-copy">
+        <p class="label">Miks Google, AI ja töövood?</p>
+        <h2>Tööriist on ainult üks osa tööst</h2>
+        <p>Google'i ökosüsteem on minu üks tugevamaid praktilisi suundi. Eriti saan aidata väikeettevõtjat, kellel ei ole oma IT-osakonda, kuid kes vajab abi Workspace'i korrastamise, migratsiooni, turvalisuse või igapäevaste töövoogudega.</p>
+        <p>AI ja automaatikate puhul vaatan alati ka seda, kellele ülesanne tegelikult sobib. Mõnikord on parim lahendus automaatika. Mõnikord on parem õpetada inimesele uus töövõte. Ja mõnikord tasub valmis programmi eest rahulikult kuutasu maksta, sest töökindlus on olulisem kui võimalus kõike ise ehitada.</p>
+      </div>
+      <div class="preview-photo"><img src="Janika ettekanne_kodulehele_MailisVahenurm18.jpg" alt="Janika Mõru koolitamas"></div>
+    </div>
+  </section>
 
-<footer>
-  <div class="footer-logo">Janika Mõru</div>
-  <p>AI-koolitused · mentorlus · Google Workspace</p>
-  <p><a href="mailto:janika@assisto.ee">janika@assisto.ee</a></p>
-  <p>© 2026 Janika Mõru</p>
-</footer>
-<script src="charla.js"></script>
-</body>
-</html>
+  <section class="section paper">
+    <div class="principles">
+      <div><p class="label">Minu neli põhimõtet</p><h2>Need aitavad mul tööriistade virvarris suunda hoida</h2></div>
+      <div class="principle-list">
+        <article class="principle"><div class="principle-number">01</div><div><h3>Vähem tööriistu on parem</h3><p>Iga uus programm tähendab veel üht kontot, seadistust ja kohta, mida hallata. Kõigepealt kasutan paremini ära selle, mis juba olemas on.</p></div></article>
+        <article class="principle"><div class="principle-number">02</div><div><h3>Delegeerida peab oskama</h3><p>Ülesande võib anda inimesele, AI-le või automaatikale. Hea valik arvestab nii tulemuse täpsust kui ka seda, kuidas muutus mõjutab inimese rolli ja tööga rahulolu.</p></div></article>
+        <article class="principle"><div class="principle-number">03</div><div><h3>Samast rahast saab rohkem kasu</h3><p>Kui programm on juba kasutuses, tasub vaadata iga nupu taha. Sageli pole vaja uut litsentsi, vaid olemasoleva tööriista paremat seadistust.</p></div></article>
+        <article class="principle"><div class="principle-number">04</div><div><h3>Õpi ise tulemuslikum olema</h3><p>Kui oskad oma tööd tervikuna näha, on lihtsam hinnata ka uusi võimalusi: kas need aitavad eesmärki saavutada või on lihtsalt midagi, mida oleks tore teada.</p></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section white closing">
+    <p class="label">Koostöö</p><h2>Kui selline lähenemine sobib, vali koht, kust alustada</h2>
+    <div class="button-row"><a class="button" href="ai-ja-automatsioonid.html">AI ja automatsioonid</a><a class="button secondary" href="google-okosusteem.html">Google ökosüsteem</a></div>
+  </section>
+</main>
+<footer><div><div class="footer-logo">Janika Mõru</div><p>Vähem tööriistu. Parem tööviis.</p><p>© 2026 Janika Mõru</p></div><div class="footer-links"><div class="footer-heading">Koostöö</div><a href="ai-ja-automatsioonid.html">AI ja automatsioonid</a><a href="google-okosusteem.html">Google ökosüsteem</a><a href="kontakt.html">Broneeri aeg</a></div><div class="footer-links"><div class="footer-heading">Kontakt</div><a href="mailto:janika@assisto.ee">janika@assisto.ee</a><a href="minust.html">Minust</a><a href="blogi.html">Blogi</a></div></footer>
+<script src="site.js"></script><script src="charla.js"></script>
+</body></html>
