@@ -169,6 +169,8 @@ h3 { margin-bottom: .7rem; font-size: clamp(1.45rem, 2.4vw, 2.15rem); line-heigh
 .booking-frame { min-height: 650px; padding: 1.2rem; border-radius: var(--radius); background: var(--white); }
 
 .legacy-choice { min-height: 70vh; }
+.legacy-choice .direction-grid { grid-template-columns: repeat(3, 1fr); }
+.legacy-choice .direction { display: block; }
 
 footer { width: min(1360px, 100%); margin: 0 auto; padding: 4rem max(1.5rem, calc((100% - var(--content))/2 + 1.5rem)); display: grid; grid-template-columns: 1.2fr .8fr .8fr; gap: 2rem; background: var(--blue-dark); color: rgba(255,255,255,.72); }
 .footer-logo { margin-bottom: .7rem; color: white; font-family: var(--head); font-size: 2rem; font-style: italic; }
@@ -201,6 +203,7 @@ footer p { margin-bottom: .35rem; font-size: .78rem; }
   .hero-copy { padding: 4.5rem 1.5rem 3rem; }
   .hero-media { min-height: 460px; margin: 0 .5rem .5rem; }
   .direction-grid, .editorial-split, .principles, .example-grid, .preview-grid, .post-grid, .feature-grid, .offer-split, .course-grid, .about-intro, .contact-layout { grid-template-columns: 1fr; }
+  .legacy-choice .direction-grid { grid-template-columns: 1fr; }
   .sticky-title { position: static; }
   .direction { grid-template-rows: 230px auto; }
   .result-band { padding: 4rem 1.5rem; }
