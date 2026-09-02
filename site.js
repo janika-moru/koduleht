@@ -9,11 +9,28 @@
     toggle.textContent = open ? 'Sulge' : 'Menüü';
   });
 
+  function closeMenu() {
+    nav.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+    toggle.textContent = 'Menüü';
+  }
+
   nav.querySelectorAll('a').forEach(function (link) {
-    link.addEventListener('click', function () {
-      nav.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      toggle.textContent = 'Menüü';
-    });
+    link.addEventListener('click', closeMenu);
+  });
+
+  document.addEventListener('keydown', function (event) {
+    if (event.key === 'Escape' && nav.classList.contains('open')) {
+      closeMenu();
+      toggle.focus();
+    }
+  });
+
+  document.addEventListener('click', function (event) {
+    if (nav.classList.contains('open') && !nav.contains(event.target)) closeMenu();
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1160) closeMenu();
   });
 })();
