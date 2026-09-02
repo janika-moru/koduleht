@@ -29,4 +29,8 @@
 .reaction-row { display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
 .reaction-button { min-height: 44px; padding: .55rem 1rem; border: 1px solid var(--line); border-radius: 999px; background: white; color: var(--text); cursor: pointer; }
 .reaction-button.selected { border-color: var(--blue); background: var(--blue-soft); }
+.article-next { max-width: 900px; margin: 4rem auto; padding: clamp(2.5rem,6vw,4.5rem); border-radius: var(--radius); background: var(--blue-soft); text-align: center; }
+.article-next h2 { max-width: 700px; margin-left: auto; margin-right: auto; }
+.article-next > p:not(.label) { max-width: 640px; margin-left: auto; margin-right: auto; color: var(--text); }
+.article-next .button-row { justify-content: center; }
 @media(max-width:760px){.blog-index{width:calc(100% - 1rem);padding:4.5rem 1.25rem}.blog-entry,.article-split{grid-template-columns:1fr}.blog-entry.reverse .blog-entry-visual{order:0}.article-hero-visual{min-height:58vw}}
